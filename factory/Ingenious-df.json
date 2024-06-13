@@ -1,0 +1,9 @@
+{
+	"name": "Ingenious-df",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "61a6db4e-a82e-491f-a787-7aabda48da29",
+		"tenantId": "6ed95ea4-dc7d-40f3-b482-b19e91494b06"
+	}
+}
