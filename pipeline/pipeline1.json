@@ -1,0 +1,27 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "MyVar1",
+					"value": "AzureADF"
+				}
+			}
+		],
+		"variables": {
+			"MyVar1": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
