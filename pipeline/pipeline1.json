@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Set variable1",
+				"name": "Set variable Quarter",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
@@ -12,14 +12,52 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"variableName": "MyVar1",
-					"value": "AzureADF"
+					"variableName": "quarter_var",
+					"value": {
+						"value": "@pipeline().parameters.quarter_par",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set variable Year",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Set variable Quarter",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "year_var",
+					"value": {
+						"value": "@pipeline().parameters.year_par",
+						"type": "Expression"
+					}
 				}
 			}
 		],
+		"parameters": {
+			"quarter_par": {
+				"type": "int"
+			},
+			"year_par": {
+				"type": "int"
+			}
+		},
 		"variables": {
-			"MyVar1": {
-				"type": "String"
+			"quarter_var": {
+				"type": "Integer"
+			},
+			"year_var": {
+				"type": "Integer"
 			}
 		},
 		"annotations": []
