@@ -65,18 +65,18 @@
 				},
 				"parameters": {
 					"quarter_par": {
-						"type": "int"
+						"type": "string"
 					},
 					"year_par": {
-						"type": "int"
+						"type": "string"
 					}
 				},
 				"variables": {
 					"quarter_var": {
-						"type": "Integer"
+						"type": "String"
 					},
 					"year_var": {
-						"type": "Integer"
+						"type": "String"
 					}
 				},
 				"annotations": []
