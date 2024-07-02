@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "ingenious-df"
 		},
+		"MemberDataFunction_functionKey": {
+			"value": ""
+		},
+		"MemberDataFunction_properties_typeProperties_functionAppUrl": {
+			"value": "https://memberdataparser.azurewebsites.net"
+		},
 		"containerUri": {
 			"value": ""
 		},

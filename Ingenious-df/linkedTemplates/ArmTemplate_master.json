@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ingenious-df"
 		},
+		"MemberDataFunction_functionKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'functionKey' of 'MemberDataFunction'"
+		},
+		"MemberDataFunction_properties_typeProperties_functionAppUrl": {
+			"type": "string",
+			"defaultValue": "https://memberdataparser.azurewebsites.net"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -33,6 +41,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"MemberDataFunction_functionKey": {
+						"value": "[parameters('MemberDataFunction_functionKey')]"
+					},
+					"MemberDataFunction_properties_typeProperties_functionAppUrl": {
+						"value": "[parameters('MemberDataFunction_properties_typeProperties_functionAppUrl')]"
 					}
 				}
 			},
