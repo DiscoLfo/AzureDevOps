@@ -61,12 +61,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [
-					{
-						"name": "",
-						"value": ""
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"functionName": "DataParser",
 					"body": {
