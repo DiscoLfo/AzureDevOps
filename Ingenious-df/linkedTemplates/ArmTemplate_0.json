@@ -107,7 +107,7 @@
 						"typeProperties": {
 							"functionName": "DataParser",
 							"body": {
-								"value": "@variables('quarter_var')",
+								"value": "@concat('{\"quarter_val\":\"', pipeline().parameters.quarter_par, '\", \"year_val\":\"', pipeline().parameters.year_par,'\"}')\n",
 								"type": "Expression"
 							},
 							"headers": {
