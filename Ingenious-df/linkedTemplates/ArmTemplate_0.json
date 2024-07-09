@@ -107,16 +107,11 @@
 						"typeProperties": {
 							"functionName": "DataParser",
 							"body": {
-								"token_type": "Bearer",
-								"expires_in": "3599",
-								"ext_expires_in": "3599",
-								"expires_on": "1719960032",
-								"not_before": "1719956132",
-								"resource": "https://management.azure.com/",
-								"access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyIsImtpZCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuYXp1cmUuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzZlZDk1ZWE0LWRjN2QtNDBmMy1iNDgyLWIxOWU5MTQ5NGIwNi8iLCJpYXQiOjE3MTk5NTYxMzIsIm5iZiI6MTcxOTk1NjEzMiwiZXhwIjoxNzE5OTYwMDMyLCJhaW8iOiJFMmRnWUtqeHZIbjk1SVg0SytVblQxVEVhaG1VQVFBPSIsImFwcGlkIjoiN2JiZmJjZTUtMGNlNi00YTc1LWE2ZTQtYTEyZTE0NGYxZDg2IiwiYXBwaWRhY3IiOiIxIiwiaWRwIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNmVkOTVlYTQtZGM3ZC00MGYzLWI0ODItYjE5ZTkxNDk0YjA2LyIsImlkdHlwIjoiYXBwIiwib2lkIjoiNDE1YjY1MDMtNDZjOC00MTY0LTlkYjUtYzllMjFhZjA5MzBkIiwicmgiOiIwLkFYWUFwRjdaYm4zYzgwQzBnckdla1VsTEJrWklmM2tBdXRkUHVrUGF3ZmoyTUJPMEFBQS4iLCJzdWIiOiI0MTViNjUwMy00NmM4LTQxNjQtOWRiNS1jOWUyMWFmMDkzMGQiLCJ0aWQiOiI2ZWQ5NWVhNC1kYzdkLTQwZjMtYjQ4Mi1iMTllOTE0OTRiMDYiLCJ1dGkiOiJDRmkwbEgyVUFVYXp4bmdSc0NPX0FBIiwidmVyIjoiMS4wIiwieG1zX2lkcmVsIjoiNyA0IiwieG1zX3RjZHQiOjE0NDc3MTAxODF9.YTY4Rs_eofECAfCefL1RCjoqKhVdqyP6BSznoI9TncxRRMoo7KFhMhiFrVHC3JS0FLVMfelmVuuDr8ilGEPUllIyD-cFVVaPKijVdkHt0-aEe81RmZd7czFhz-Gr5_mUxuO0NTHoZTVgnG1epI1p6b3gDraLBzJfdSwDc54UWCgbqAM7nVnsHcaOX4rnKEiwLQwA7M8iQ42HqVbEJWUzb82gdIrH_hCbp9SCMjArRfYtHOhHR0lYvPmcYBV4o23Q63HZjARZGZChYmRO6uWHG2tIF6zfMZGLt2J8keXIPliPA-PxO3_I9Xod3GNHYaXAx1olLVmTsu-mt-6RR9idFg"
+								"value": "@variables('quarter_var')",
+								"type": "Expression"
 							},
 							"headers": {
-								"Content-Type": "application/x-www-form-urlencoded"
+								"Content-Type": "application/json"
 							},
 							"method": "POST"
 						},
