@@ -98,7 +98,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "@activity('Start Long Running Task').output.statusQueryGetUri."
+					"method": "GET",
+					"url": {
+						"value": "@activity('Azure Function1').output.statusQueryGetUri",
+						"type": "Expression"
+					}
 				}
 			}
 		],
